@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>Scene Editor</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
+	</head>
+	<body>
+		<canvas id="scene"></canvas>
+		<div id="buttons">
+			<button id="add-cube">Add cube</button>
+			<button id="add-cone">Add cone</button>
+			<button id="add-torus">Add torus</button>
+			<button id="torus-kandi">Torus kandi</button>
+		</div>
+		<div id="color-controls">
+			<input type="text" id="color-input">Set color from hex value (rrggbb)</input>
+			<button id="set-color">Set color</button>
+		</div>
+		<div id="position-info">
+			<p id="current-plane">Current plane: XY</p>
+		</div>
+		<!--<script src="three.min.js"></script>-->
+		<!--<script src="three.js"></script>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/threejs/r83/three.min.js"></script>
+		<script src="OrbitControls.js"></script>
+		<script src="sceneeditor.js"></script>
+	</body>
+</html>
